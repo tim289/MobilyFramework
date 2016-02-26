@@ -58,7 +58,7 @@
 - (void)setup {
     [super setup];
     
-    self.locale = NSLocale.currentLocale;
+    self.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
     self.calendar = [NSCalendar currentCalendar];
     self.date = [NSDate date];
 }

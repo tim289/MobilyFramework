@@ -462,7 +462,7 @@
         static NSNumberFormatter* numberFormat = nil;
         if(numberFormat == nil) {
             numberFormat = [NSNumberFormatter new];
-            numberFormat.locale = NSLocale.currentLocale;
+            numberFormat.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
             numberFormat.formatterBehavior = NSNumberFormatterBehavior10_4;
             numberFormat.numberStyle = NSNumberFormatterNoStyle;
         }
@@ -554,7 +554,7 @@
         if(numberFormat == nil) {
             numberFormat = [NSNumberFormatter new];
         }
-        numberFormat.locale = NSLocale.currentLocale;
+        numberFormat.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
         numberFormat.formatterBehavior = NSNumberFormatterBehavior10_4;
         numberFormat.numberStyle = NSNumberFormatterNoStyle;
         
@@ -889,7 +889,7 @@
     static NSNumberFormatter* numberFormat = nil;
     if(numberFormat == nil) {
         numberFormat = [NSNumberFormatter new];
-        numberFormat.locale = NSLocale.currentLocale;
+        numberFormat.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
         numberFormat.formatterBehavior = NSNumberFormatterBehavior10_4;
         numberFormat.numberStyle = NSNumberFormatterNoStyle;
     }

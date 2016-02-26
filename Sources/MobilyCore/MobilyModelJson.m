@@ -753,6 +753,7 @@
         static NSDateFormatter* dateFormatter = nil;
         if(dateFormatter == nil) {
             dateFormatter = [NSDateFormatter new];
+            dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
         }
         if(_timeZone != nil) {
             dateFormatter.timeZone = _timeZone;

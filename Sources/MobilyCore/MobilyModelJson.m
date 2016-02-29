@@ -462,7 +462,7 @@
         static NSNumberFormatter* numberFormat = nil;
         if(numberFormat == nil) {
             numberFormat = [NSNumberFormatter new];
-            numberFormat.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
+            numberFormat.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"RU"];
             numberFormat.formatterBehavior = NSNumberFormatterBehavior10_4;
             numberFormat.numberStyle = NSNumberFormatterNoStyle;
         }
@@ -554,7 +554,7 @@
         if(numberFormat == nil) {
             numberFormat = [NSNumberFormatter new];
         }
-        numberFormat.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
+        numberFormat.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"RU"];
         numberFormat.formatterBehavior = NSNumberFormatterBehavior10_4;
         numberFormat.numberStyle = NSNumberFormatterNoStyle;
         
@@ -753,7 +753,7 @@
         static NSDateFormatter* dateFormatter = nil;
         if(dateFormatter == nil) {
             dateFormatter = [NSDateFormatter new];
-            dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
+            dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"RU"];
         }
         if(_timeZone != nil) {
             dateFormatter.timeZone = _timeZone;
@@ -889,7 +889,7 @@
     static NSNumberFormatter* numberFormat = nil;
     if(numberFormat == nil) {
         numberFormat = [NSNumberFormatter new];
-        numberFormat.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
+        numberFormat.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"RU"];
         numberFormat.formatterBehavior = NSNumberFormatterBehavior10_4;
         numberFormat.numberStyle = NSNumberFormatterNoStyle;
     }

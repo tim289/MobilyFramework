@@ -567,7 +567,7 @@
 @implementation NSDateFormatter (MobilyNS)
 
 + (instancetype)moDateFormatterWithFormat:(NSString*)format {
-    return [self moDateFormatterWithFormat:format locale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"]];
+    return [self moDateFormatterWithFormat:format locale:[[NSLocale alloc] initWithLocaleIdentifier:@"RU"]];
 }
 
 + (instancetype)moDateFormatterWithFormat:(NSString*)format locale:(NSLocale*)locale {
@@ -578,7 +578,7 @@
 }
 
 + (instancetype)moDateFormatterWithFormatTemplate:(NSString*)formatTemplate {
-    return [self moDateFormatterWithFormatTemplate:formatTemplate locale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"]];
+    return [self moDateFormatterWithFormatTemplate:formatTemplate locale:[[NSLocale alloc] initWithLocaleIdentifier:@"RU"]];
 }
 
 + (instancetype)moDateFormatterWithFormatTemplate:(NSString*)formatTemplate locale:(NSLocale*)locale {

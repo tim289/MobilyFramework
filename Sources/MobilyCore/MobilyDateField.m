@@ -86,7 +86,7 @@
         self.inputView = _pickerView;
     }
     if(_pickerView != nil) {
-        _pickerView.locale = _locale;
+        _pickerView.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"RU"];
         _pickerView.calendar = _calendar;
         _pickerView.timeZone = _timeZone;
         _pickerView.minimumDate = _minimumDate;

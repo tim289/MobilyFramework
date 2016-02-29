@@ -78,6 +78,7 @@
     if(_pickerView == nil) {
         self.pickerView = [UIDatePicker new];
         if(_pickerView != nil) {
+            _pickerView.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"RU"];
             _pickerView.datePickerMode = _datePickerMode;
             _pickerView.minuteInterval = _minuteInterval;
             [_pickerView addTarget:self action:@selector(changedDate) forControlEvents:UIControlEventValueChanged];
@@ -136,7 +137,7 @@
         
         if([self isEditing] == YES) {
             if(_date != nil) {
-                _pickerView.locale = _locale;
+                _pickerView.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"RU"];
             }
         }
     }

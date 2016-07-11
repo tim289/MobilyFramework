@@ -75,7 +75,7 @@
 - (BOOL)fromHttpQuery:(MobilyHttpQuery*)httpQuery {
     if(httpQuery.error == nil) {
         NSString* responseMimeType = httpQuery.responseMimeType;
-        if(([responseMimeType isEqualToString:@"application/json"] == YES) || ([responseMimeType isEqualToString:@"text/json"] == YES)) {
+        if(([responseMimeType isEqualToString:@"application/json"] == YES) || ([responseMimeType isEqualToString:@"text/json"] == YES) || ([responseMimeType isEqualToString:@"text/html"] == YES)) {
             id json = httpQuery.responseJson;
             if(json != nil) {
                 [self fromJson:json];
